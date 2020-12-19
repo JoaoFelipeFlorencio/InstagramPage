@@ -10,7 +10,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(250, 250 , 250);
   margin: 0;
   padding: 0;
   display: flex;
@@ -26,15 +26,23 @@ body {
 }
 
 .instagram-phone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  overflow: hidden;
+  height: 600px;
+  width: 400px;
+  background-image: url(../images/InstagramPhone.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.instagram-phone img {
-  height: 50rem;
+.instagram-phone img{
+  position: absolute;
+  top: 18.2%;
+  left: 29.1%;
+
+  transition: opacity 6s;
+}
+
+.instagram-phone img+img{
+  opacity: 0;
 }
 
 .instagram-continue {
@@ -137,6 +145,13 @@ body {
   .instagram-wrapper {
     width: 90%;
   }
+
+  .instagram-phone{
+    background-size: 110%;
+  }
+  .instagram-phone img{
+    display: none;
+  }
 }
 
 @media (max-width: 650px) {
@@ -149,6 +164,7 @@ body {
 
   .instagram-phone {
     display: none;
+    
   }
 
   .instagram-continue {
