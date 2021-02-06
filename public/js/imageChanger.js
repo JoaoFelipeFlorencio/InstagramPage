@@ -1,20 +1,19 @@
-const images = ["image01", "image02", "image03", "image04", "image05"];
 
-var prev = 0;
-var next = 1;
-
-
-function changeImage() {
-  setTimeout(function() {
+function changeBackground() {
+  const backgrounds = [
+    "/public/images/insta-background.jpg",
+    "/public/images/insta-background-2.jpg",
+    "/public/images/insta-background-3.jpg",
     
-    document.getElementById(images[prev]).style.opacity = 0;
-    document.getElementById(images[next]).style.opacity = 1;
+  ];
+  const background = $(".instagram-phone");
+  let i = 0;
+  setInterval(() => {
+    background.css('background-image', `url(${backgrounds[i]})`);
+    i++;
+    i = i > 2 ? 0 : i;
+  }, 5000);
 
-    prev = next;
-
-    next = next === 2 ? 0 : next + 1;
-
-    changeImage();
-  }, 6000);
 }
-changeImage();
+
+changeBackground();

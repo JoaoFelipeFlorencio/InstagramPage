@@ -28,21 +28,14 @@ body {
 .instagram-phone {
   height: 600px;
   width: 400px;
-  background-image: url(../images/InstagramPhone.png);
+  margin-right: 20px;
+  background-image: url(../images/insta-background.jpg);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.instagram-phone img{
-  position: absolute;
-  top: 18.2%;
-  left: 29.1%;
-
-  transition: opacity 6s;
-}
-
-.instagram-phone img+img{
-  opacity: 0;
+  position: relative;
+  transition: 3s;
+  border-radius: 8px;
 }
 
 .instagram-continue {
@@ -91,15 +84,23 @@ body {
 }
 
 .instagram-login {
+  margin-top: 15px;
   background-color: #0095f6;
   color: white;
-  padding: 8px;
-  border-radius: 4px;
+  padding: 9px;
+  border-radius: 25px;
+  width: 70%;
+  text-align: center;
 }
 
 .instagram-logout {
   color: #0095f6;
   margin-top: 1rem;
+  width: 70%;
+  text-align: center;
+  border: 1px solid #0095f6 ;
+  border-radius: 25px;
+  padding: 8px;
 }
 
 .not-account {
@@ -135,10 +136,12 @@ body {
 
 .app-download:nth-child(1) {
   background-image: url("../images/apple-button.png");
+  background-size: 100% 100%;
 }
 
 .app-download:nth-child(2) {
   background-image: url("../images/google-play-badge.png");
+  background-size: 100% 100%;
 }
 
 @media (max-width: 1024px) {
@@ -146,12 +149,8 @@ body {
     width: 90%;
   }
 
-  .instagram-phone{
-    background-size: 110%;
-  }
-  .instagram-phone img{
-    display: none;
-  }
+
+
 }
 
 @media (max-width: 650px) {
@@ -172,6 +171,9 @@ body {
   }
   .app-download + .app-download {
     margin-left: 0.5rem;
+  }
+  .group + .group {
+    margin-top: 20px;
   }
 }
 
