@@ -26,9 +26,9 @@ body {
 }
 
 .instagram-phone {
-  height: 600px;
-  width: 400px;
-  margin-right: 20px;
+  width: 45%;
+  height: 80%;
+  margin-right: 40px;
   background-image: url(../images/insta-background.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -72,6 +72,7 @@ body {
 }
 
 .profile-photo {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,6 +82,10 @@ body {
 
 .profile-photo img{
     width: 6rem;
+}
+
+.group + .group {
+  margin-top: 20px;
 }
 
 .instagram-login {
@@ -144,16 +149,14 @@ body {
   background-size: 100% 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .instagram-wrapper {
     width: 90%;
   }
 
-
-
 }
 
-@media (max-width: 650px) {
+@media (max-width: 720px) {
   body {
     background-color: white;
   }
@@ -172,9 +175,7 @@ body {
   .app-download + .app-download {
     margin-left: 0.5rem;
   }
-  .group + .group {
-    margin-top: 20px;
-  }
+
 }
 
 @keyframes appear {

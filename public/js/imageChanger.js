@@ -4,7 +4,7 @@ function changeBackground() {
     "/public/images/insta-background.jpg",
     "/public/images/insta-background-2.jpg",
     "/public/images/insta-background-3.jpg",
-    
+
   ];
   const background = $(".instagram-phone");
   let i = 0;
